@@ -122,6 +122,10 @@ section{scroll-margin-top:88px}
 .contact .eyebrow{color:var(--accent)}
 .contact h2{font-size:clamp(44px,5vw,60px);margin:24px 0}
 .contact .lead{font-size:18px;color:var(--soft)}
+.docs{margin-top:32px;padding:24px 26px;border:1px solid #34506F;border-radius:14px}
+.docs h3{font-size:18px;color:#fff;margin-bottom:12px}
+.docs ul{margin:0;padding-left:20px;color:var(--soft);font-size:16px;display:flex;flex-direction:column;gap:6px}
+.docs p{margin-top:14px;font-size:15px;color:var(--accent)}
 .coords{display:flex;flex-direction:column;gap:14px;margin-top:32px;font-size:18px}
 .coords a{color:#fff;text-decoration:none}
 .coords a:hover{text-decoration:underline}
@@ -180,6 +184,7 @@ form .btn{min-height:54px;font-size:17px}
       <a href="#situations">Votre situation</a>
       <a href="#services">Services</a>
       <a href="#methode">Comment ça se passe</a>
+      <a href="#qualifications">Qualifications</a>
       <a href="#faq">Questions</a>
       <a class="tel" href="tel:+32486378139">0486 37 81 39</a>
       <a class="btn btn-accent" href="#contact">Devis gratuit</a>
@@ -275,16 +280,32 @@ form .btn{min-height:54px;font-size:17px}
       <h2>Cinq étapes, sans surprise.</h2>
     </div>
     <ol class="steps">
-      <li><span class="num">01</span><h3>Premier contact</h3><p class="muted">Vous m’envoyez votre rapport de contrôle ou décrivez votre installation.</p></li>
-      <li><span class="num">02</span><h3>Visite et mesures</h3><p class="muted">Identification des circuits, mesures de terre, d’isolement et des différentiels.</p></li>
-      <li><span class="num">03</span><h3>Devis clair</h3><p class="muted">Chaque poste détaillé : ce qui est obligatoire et ce qui est conseillé.</p></li>
-      <li><span class="num">04</span><h3>Travaux</h3><p class="muted">En soirée, le week-end ou un jour férié, selon ce qui vous arrange.</p></li>
+      <li><span class="num">01</span><h3>Premier contact</h3><p class="muted">Vous m’envoyez votre rapport de contrôle et des photos de votre tableau et des infractions.</p></li>
+      <li><span class="num">02</span><h3>Devis clair</h3><p class="muted">Établi à distance sur base de vos documents, chaque poste détaillé : obligatoire ou conseillé.</p></li>
+      <li><span class="num">03</span><h3>Date confirmée</h3><p class="muted">La date d’intervention est fixée à réception de l’acompte.</p></li>
+      <li><span class="num">04</span><h3>Travaux et mesures</h3><p class="muted">Identification des circuits, corrections, mesures de terre, d’isolement et des différentiels.</p></li>
       <li><span class="num">05</span><h3>Dossier prêt</h3><p class="muted">Mesures, schémas et plans remis : vous appelez l’organisme agréé sereinement.</p></li>
     </ol>
   </div>
 </section>
 
-<div class="wrap">
+<section class="block services" id="qualifications">
+  <div class="wrap">
+    <div class="intro">
+      <span class="eyebrow">Qualifications</span>
+      <h2>Formé, assuré, expérimenté.</h2>
+      <p>Une formation technique solide et une longue expérience dans un secteur où la rigueur et la conformité ne se négocient pas.</p>
+    </div>
+    <div class="svc">
+      <div><h3>CESS en électromécanique</h3><p class="muted">Diplôme obtenu en 2013.</p></div>
+      <div><h3>Formation RGIE – Volta</h3><p class="muted">Installations domestiques nouvelles et existantes (2026).</p></div>
+      <div><h3>Bornes de recharge – Volta</h3><p class="muted">« Bornes de recharge : les chaînons manquants » (2026).</p></div>
+      <div><h3>12 ans d’industrie pharmaceutique</h3><p class="muted">Technicien et teamleader de maintenance chez GSK, UCB et Sartorius : rigueur, traçabilité et documentation.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="margin-top:104px">
   <aside class="pros">
     <div>
       <h2>PME, commerces et maisons de repos</h2>
@@ -306,7 +327,8 @@ form .btn{min-height:54px;font-size:17px}
       <h2 class="q">Questions fréquentes</h2>
       <details><summary>Faites-vous le contrôle officiel ?</summary><p>Non. Le contrôle est réalisé par un organisme agréé, indépendant. Je réalise les travaux et je vous remets un dossier prêt pour le jour du passage.</p></details>
       <details><summary>J’ai un rapport négatif, que dois-je faire ?</summary><p>Envoyez-le-moi. Je vous dis quels travaux sont nécessaires et je vous remets un devis. Le rapport indique le délai dans lequel les infractions doivent être corrigées.</p></details>
-      <details><summary>Le devis est-il payant ?</summary><p>Non, le devis est gratuit. Les frais de déplacement éventuels sont indiqués clairement à l’avance.</p></details>
+      <details><summary>Le devis est-il payant ?</summary><p>Non, le devis est gratuit. Il est établi à distance, sur base de votre rapport de contrôle et de vos photos. Tout écart constaté sur place fait l’objet d’un avenant soumis à votre accord.</p></details>
+      <details><summary>Comment la date d’intervention est-elle fixée ?</summary><p>Une fois le devis accepté, la date est confirmée à réception de l’acompte. Il me permet de réserver le créneau et de commander le matériel.</p></details>
       <details><summary>Quand pouvez-vous intervenir ?</summary><p>En soirée en semaine, le week-end et les jours fériés : pratique si vous travaillez en journée.</p></details>
     </div>
   </div>
@@ -319,7 +341,19 @@ form .btn{min-height:54px;font-size:17px}
       <div>
         <span class="eyebrow">Devis gratuit</span>
         <h2>Parlons de votre installation.</h2>
-        <p class="lead">Décrivez votre situation. Si vous avez un rapport de contrôle, joignez-le à votre e-mail : je vous réponds rapidement.</p>
+        <p class="lead">Décrivez votre situation et joignez vos documents à votre e-mail : je vous réponds rapidement.</p>
+        <div class="docs">
+          <h3>Pour un traitement plus rapide de votre demande</h3>
+          <ul>
+            <li>le rapport de contrôle complet (toutes les pages)</li>
+            <li>des photos du tableau électrique, porte ouverte, étiquettes lisibles</li>
+            <li>une photo du compteur et du différentiel général</li>
+            <li>des photos des infractions relevées, si possible</li>
+            <li>le plan de la maison ou un croquis, avec la surface approximative</li>
+            <li>l’année de construction de l’habitation</li>
+          </ul>
+          <p>La date d’intervention est confirmée à réception de l’acompte.</p>
+        </div>
         <div class="coords">
           <a href="tel:+32486378139"><strong>0486 37 81 39</strong></a>
           <a href="mailto:service@gjanssens-st.com">service@gjanssens-st.com</a>
@@ -341,7 +375,7 @@ form .btn{min-height:54px;font-size:17px}
           </select>
         </div>
         <div class="field full"><label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea></div>
-        <p class="note full">Le bouton ouvre votre messagerie avec la demande déjà rédigée : ajoutez-y votre rapport de contrôle en pièce jointe si vous en avez un.</p>
+        <p class="note full">Le bouton ouvre votre messagerie avec la demande déjà rédigée : ajoutez-y votre rapport de contrôle et vos photos en pièces jointes.</p>
         <button class="btn btn-accent full" type="submit">Envoyer ma demande</button>
       </form>
     </div>
